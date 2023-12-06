@@ -21,21 +21,22 @@
 /*header*/
 .header {
     width: 100% ;
-    max-width: 1440px;
 }
 
 .header_content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
-    height: 800px;
+    justify-content: flex-start;
 }
 
 .header_menu {
     display: flex;
-    padding: 16px 16px 16px 16px;
+    padding: 32px;
     gap: 97px;   
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -47,6 +48,12 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .iconos {
@@ -113,10 +120,7 @@
     flex-direction: row;
 }
 
-.primary_tex {
-    padding: 120px;
-    
-}
+
 
 .tex {
     width: 50%;
@@ -165,6 +169,16 @@
     padding: 48px 48px 48px 48px;
 }
 
+.terceary_fondo2 {
+    width: 50%;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    padding: 48px 48px 48px 48px;
+}
+
 
 .testimoniales_content h4 {
     display: flex;
@@ -180,7 +194,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    
+    gap: 32px;
 }
 
 .tex2 h4 {
@@ -199,6 +213,48 @@
     color: var(--Very_dark_desaturated_blue);
 }
 
+
+.fondo_img1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fondo_img2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*personal*/
+
+.descrincion {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.descrincion p {
+    color: var(--Very_dark_desaturated_blue);
+    font-family: Fraunces;
+    font-size: 24px;
+}
+
+.descrincion span {
+    color: var(--Very_dark_grayish_blue);
+}
+
+.person {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.clientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /*galeria*/
 
