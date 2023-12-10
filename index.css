@@ -120,7 +120,12 @@
     flex-direction: row;
 }
 
-
+.contenedor_prymari {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .tex {
     width: 50%;
@@ -131,15 +136,15 @@
     
 }
 
-.tex h4 {
+.primary_tex h4 {
     font-family: Fraunces;
     font-size: 56px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--Very_dark_desaturated_blue);
 }
 
-.tex p {
+.primary_tex p {
     font-family: Barlow;
     font-size: 16px;
     font-style: normal;
@@ -147,8 +152,16 @@
     color: var(--Very_dark_desaturated_blue);
 }
 
-.tex a {
+.primary_tex a {
     text-decoration: none;
+}
+
+.primary_tex {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
 }
 
 .contenidos_terceary {
@@ -156,14 +169,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border: solid 1px red;
 }
 
 .terceary_fondo1 {
     width: 50%;
-    background-image: url(./images/desktop/image-photography.jpg);
+    background-image: url(./images/desktop/image-graphic-design.jpg);
     background-size: cover;
-    height: 600px;
+    height: 70vh;
     display: flex;
     align-items: flex-end;
     padding: 48px 48px 48px 48px;
@@ -171,20 +183,15 @@
 
 .terceary_fondo2 {
     width: 50%;
-    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-image: url(./images/desktop/image-photography.jpg);
     background-size: cover;
-    height: 600px;
+    height: 70vh;
     display: flex;
     align-items: flex-end;
     padding: 48px 48px 48px 48px;
 }
 
 
-.testimoniales_content h4 {
-    display: flex;
-    text-align: center;
-    color: var(--Dark_grayish_blue);
-}
 
 
 
@@ -201,7 +208,7 @@
     font-family: Fraunces;
     font-size: 24px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--Very_dark_desaturated_blue);
 }
 
@@ -228,6 +235,26 @@
 
 /*personal*/
 
+.testimoniales {
+    padding: 160px 80px;
+}
+
+.testimoniales_content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.testimoniales_content h4 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: var(--Dark_grayish_blue);
+    font-family: Fraunces;
+    font-weight: 700;
+
+}
+
 .descrincion {
     display: flex;
     text-align: center;
@@ -248,12 +275,23 @@
     display: flex;
     text-align: center;
     flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.person img {
+    max-width: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .clientes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 32px;
 }
 
 /*galeria*/
@@ -279,8 +317,22 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    justify-content: space-between;
-    height: 120px;
+    justify-content: center;
+    height: 50vh;
+}
+
+.finales_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.finales_content_final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
 .finalees_logo {
@@ -292,7 +344,7 @@
 .finales_tex {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 64px;
 }
 
  .finales_tex_a {
@@ -300,3 +352,5 @@
     justify-content: space-between;
     text-decoration: none;
  }
+
+ 
