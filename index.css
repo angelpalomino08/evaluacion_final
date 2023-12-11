@@ -10,6 +10,8 @@
     --Dark_grayish_blue: hsl(232, 10%, 55%);
     --Grayish_blue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
+
+    --black: #000000;
 }
 
 
@@ -152,8 +154,24 @@
     color: var(--Very_dark_desaturated_blue);
 }
 
-.primary_tex a {
-    text-decoration: none;
+
+
+.primary_tex_a {
+    color: var(--black);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow ;
+    text-decoration-thickness: 4px;
+}
+
+.primary_tex_b {
+    color: var(--black);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 104, 104) ;
+    text-decoration-thickness: 4px;
 }
 
 .primary_tex {
@@ -250,9 +268,9 @@
     text-align: center;
     flex-direction: column;
     color: var(--Dark_grayish_blue);
-    font-family: Fraunces;
-    font-weight: 700;
-
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 8px;
 }
 
 .descrincion {
@@ -319,6 +337,7 @@
     gap: 16px;
     justify-content: center;
     height: 50vh;
+    background-color: #9eedda;
 }
 
 .finales_content {
@@ -333,6 +352,13 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
+}
+
+.finales_content_final h4 {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--Darkdesaturatedcyan);
 }
 
 .finalees_logo {
@@ -351,6 +377,9 @@
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    color: var(--Darkdesaturatedcyan);
+    font-family: Barlow;
+    font-weight: 600;
  }
 
  
